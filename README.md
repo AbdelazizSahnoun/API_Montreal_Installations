@@ -9,7 +9,7 @@ activités sportives.
 
 # Points développées :
 
-**A1 15xp**
+### **A1**
 Trois listes de données doivent être obtenues à l'aide de requêtes HTTP et leur contenu doit être stocké
 dans une base de données SQLite.
 
@@ -28,48 +28,48 @@ Vous devez organiser la structure de vos données de façon à minimiser le nomb
 BD pour les fonctionnalités que vous réaliserez dans votre projet. N'hésitez pas à changer la
 modélisation des données.
 
-**A2 5xp**
+### **A2**
 L'importation de données du point A1 est faite automatiquement chaque jour à minuit à l’aide d’un
 BackgroundScheduler.
 
-**A3 5xp**
+### **A3**
 Le système écoute les requêtes HTTP sur le port 5000. La route « /doc » fait apparaître la
 documentation de tous les services REST. La documentation est en format HTML, généré à partir de
 fichiers RAML. Intégrez la fonctionnalité du point A2 à l’application Flask créée au point A3.
 
-**A4 10xp**
+### **A4**
 Le système offre un service REST permettant d'obtenir la liste des installations pour un arrondissement
 spécifié en paramètre. Les données retournées sont en format JSON.
 Ex. GET /api/installations?arrondissement=LaSalle
 
 
-**B1 10xp**
+### **B1**
 Le système détecte les nouvelles installations depuis la dernière importation de données, en dresse une
 liste sans doublon et l'envoi par courriel automatiquement. L'adresse du destinataire du courriel est
 stockée dans un fichier de configuration en format YAML.
 
-**B2 10xp**
+### **B2**
 Les noms des nouvelles installations sont publiés automatiquement sur un compte Twitter.
 
-**C1 10xp**
+### **C1**
 Le système offre un service REST permettant d'obtenir la liste des installations dont les données ont été
 mises à jour en 2021. Pour chaque installation, on indique toute l'information connue. La liste est triée
 en ordre croissant du nom de l'installation.
 
-**C2 10xp**
+### **C2**
 Le système offre un service permettant d'obtenir exactement les mêmes données que le point C1 mais
 en format XML. L'encodage de caractères doit être UTF-8.
 
-**C3 5xp**
+### **C3**
 Le système offre un service permettant d'obtenir exactement les mêmes données que le point C1 mais
 en format CSV. L'encodage de caractères doit être UTF-8.
 
-**D1 15xp**
+### **D1**
 Le système offre un service REST permettant de modifier l'état d'une glissade. Le client doit envoyer
 un document JSON contenant les modifications à apporter à la glissade. Le document JSON doit être
 validé avec json-schema.
 
-**D2 5xp**
+### **D2**
 Le système offre un service REST permettant de supprimer une glissade.
 
 	
